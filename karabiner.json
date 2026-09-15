@@ -15,7 +15,12 @@
                                 "description": "; (hold) → activate vim_layer / (tap) → ;",
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "semicolon"
+                                    "key_code": "semicolon",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
