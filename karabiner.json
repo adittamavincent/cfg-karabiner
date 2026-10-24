@@ -142,29 +142,6 @@
                                         "key_code": "right_arrow"
                                     }
                                 ]
-                            },
-                            {
-                                "description": "Command + I → Command + Up Arrow (top of page)",
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "i",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ]
                             }
                         ]
                     }
