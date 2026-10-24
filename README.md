@@ -10,22 +10,20 @@ Personal Karabiner-Elements configuration file (`karabiner.json`) optimized for 
 - **VIM Arrow Keys** (Hold `;`):
   - `; + H` → Left Arrow
   - `; + J` → Down Arrow
-  - `; + K` → Up Arrow
-  - `; + L` → Right Arrow
-- **Natural macOS Modifiers Support**:
-  - **Home / End**: `; + Cmd + H` (Line Start) & `; + Cmd + L` (Line End)
-  - **Top / Bottom**: `; + Cmd + K` (Document Top) & `; + Cmd + J` (Document Bottom)
-  - **Word Navigation**: `; + Option + H` (Previous Word) & `; + Option + L` (Next Word)
-  - **Paragraph Navigation**: `; + Option + K` (Previous Paragraph) & `; + Option + J` (Next Paragraph)
-  - **Text Selection**: Combine any of the above with `Shift` (e.g. `; + Shift + HJKL`, `; + Cmd + Shift + H/L`)
+  - `; + I` → Up Arrow
+  - `; + O` → Right Arrow
+- Navigation mappings preserve held modifiers and apply only while `vim_layer = 1`.
 
 ## Installation
 
 1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/) on macOS.
-2. Copy `karabiner.json` to your Karabiner configuration directory:
+2. Merge only the Hijo rule into the active Karabiner profile:
 
 ```bash
-cp karabiner.json ~/.config/karabiner/karabiner.json
+uv run sync_karabiner.py --dry-run
+uv run sync_karabiner.py
 ```
 
-3. Karabiner-Elements will automatically detect and apply the configuration.
+The script replaces the rule with the same description, or adds it if missing. Other
+rules and settings are retained. Before writing, it saves a timestamped backup next
+to `~/.config/karabiner/karabiner.json`. Karabiner-Elements should detect the change.
