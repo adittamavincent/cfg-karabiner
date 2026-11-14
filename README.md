@@ -15,6 +15,11 @@ with `eezaatee ·`.
 | `rules/10-shift-caps-lock-ctrl-opt-cmd.json` | **Shift + Caps Lock** → Control + Option + Command (Hyper without Shift). The held Shift is removed from the output. |
 | `rules/20-hjio-vim-layer.json` | **Hold `;`** for the arrow layer: `h` ← `j` ↓ `i` ↑ `o` →. Tap `;` (under 500 ms) still types `;`. Held Shift, Command and Option still apply, so Cmd/Option + arrow and selection work. |
 
+Verified on 2026-11-14 with Karabiner-EventViewer and the macOS Keyboard Viewer: the
+output is ⌃⌥⌘ plus the key, with no Shift. Raycast's shortcut recorder showed "Shift + L"
+for the same input; that comes from Raycast, not from this rule. If Raycast misreads it,
+turn off Raycast's own Hyper Key setting and make sure the Caps Lock light is off.
+
 Caps Lock alone → full Hyper (Shift + Control + Option + Command) is **not** in this
 repository. Use the app's own preset for it. The Shift + Caps Lock rule is built to
 sit in front of that preset.

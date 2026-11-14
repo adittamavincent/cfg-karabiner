@@ -1,5 +1,11 @@
 # Riwayat cfg-karabiner
 
+## 2026-11-14T10:50+07:00 — Shift + Caps Lock diverifikasi dengan tombol fisik
+
+- **Permintaan:** Vincent menguji Shift + Caps Lock dan bertanya kenapa recorder Raycast menampilkan "Shift + L".
+- **Hasil:** Karabiner-EventViewer (Capture Input Events) menunjukkan Shift dilepas, lalu ⌘ ⌥ ⌃ ditekan, dan `l` keluar dengan flags `left_command, left_control, left_option` tanpa Shift. Keyboard Viewer macOS juga menampilkan ⌃⌥⌘. Output aturan benar.
+- **Catatan:** Tampilan "Shift + L" di recorder Raycast berasal dari Raycast, bukan dari aturan ini. Penyebab di Raycast belum dipastikan (kandidat: Hyper Key bawaan Raycast, lampu Caps Lock menyala, atau tampilan recorder).
+
 ## 2026-11-14T10:40+07:00 — Rename to cfg-karabiner
 
 - **Permintaan:** Vincent meminta nama repo (lokal dan GitHub) mengikuti praktik baik dengan prefix yang menunjukkan ini konfigurasi untuk program lain.
