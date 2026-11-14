@@ -2,9 +2,9 @@
 
 ## 2026-11-14T10:50+07:00 — Shift + Caps Lock diverifikasi dengan tombol fisik
 
-- **Permintaan:** Vincent menguji Shift + Caps Lock dan bertanya kenapa recorder Raycast menampilkan "Shift + L".
+- **Permintaan:** Vincent menguji Shift + Caps Lock dan bertanya kenapa recorder Raycast menampilkan "Left Shift" (awalnya disebut "Shift + L", lalu dikoreksi Vincent).
 - **Hasil:** Karabiner-EventViewer (Capture Input Events) menunjukkan Shift dilepas, lalu ⌘ ⌥ ⌃ ditekan, dan `l` keluar dengan flags `left_command, left_control, left_option` tanpa Shift. Keyboard Viewer macOS juga menampilkan ⌃⌥⌘. Output aturan benar.
-- **Catatan:** Tampilan "Shift + L" di recorder Raycast berasal dari Raycast, bukan dari aturan ini. Penyebab di Raycast belum dipastikan (kandidat: Hyper Key bawaan Raycast, lampu Caps Lock menyala, atau tampilan recorder).
+- **Catatan:** Recorder Raycast menerima hotkey satu modifier. Karabiner melepas Shift saat Caps Lock ditekan, sehingga recorder menyimpan "Left Shift" sebelum ⌃⌥⌘ datang. Cara rekam: tekan Control + Option + Command + huruf secara fisik; hasilnya juga terpanggil lewat Shift + Caps Lock + huruf. README diperbarui.
 
 ## 2026-11-14T10:40+07:00 — Rename to cfg-karabiner
 

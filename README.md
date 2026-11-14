@@ -16,9 +16,16 @@ with `eezaatee ·`.
 | `rules/20-hjio-vim-layer.json` | **Hold `;`** for the arrow layer: `h` ← `j` ↓ `i` ↑ `o` →. Tap `;` (under 500 ms) still types `;`. Held Shift, Command and Option still apply, so Cmd/Option + arrow and selection work. |
 
 Verified on 2026-11-14 with Karabiner-EventViewer and the macOS Keyboard Viewer: the
-output is ⌃⌥⌘ plus the key, with no Shift. Raycast's shortcut recorder showed "Shift + L"
-for the same input; that comes from Raycast, not from this rule. If Raycast misreads it,
-turn off Raycast's own Hyper Key setting and make sure the Caps Lock light is off.
+output is ⌃⌥⌘ plus the key, with no Shift.
+
+**Recording this shortcut in another app (found 2026-11-14).** Shortcut recorders that
+accept a single modifier as a hotkey, such as Raycast's, stop too early. Karabiner
+releases Shift the moment Caps Lock goes down, so the recorder sees Shift pressed and
+released on its own and saves "Left Shift". To record, press the physical keys
+Control + Option + Command + the letter instead. The saved shortcut then also fires
+from Shift + Caps Lock + the letter. Delete any "Left Shift" hotkey a failed recording
+left behind, because it fires on every Shift press. See `../cfg-raycast` for the
+Raycast setup.
 
 Caps Lock alone → full Hyper (Shift + Control + Option + Command) is **not** in this
 repository. Use the app's own preset for it. The Shift + Caps Lock rule is built to
