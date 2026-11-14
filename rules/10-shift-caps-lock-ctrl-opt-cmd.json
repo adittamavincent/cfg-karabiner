@@ -1,0 +1,27 @@
+{
+  "id": "shift-caps-lock-ctrl-opt-cmd",
+  "placement": "before-overlaps",
+  "legacy_descriptions": [],
+  "rule": {
+    "description": "eezaatee · Shift + Caps Lock → Control + Option + Command (Hyper without Shift)",
+    "manipulators": [
+      {
+        "description": "Shift + caps_lock → left_control + left_option + left_command; the held Shift is removed from the output",
+        "type": "basic",
+        "from": {
+          "key_code": "caps_lock",
+          "modifiers": {
+            "mandatory": ["shift"],
+            "optional": ["caps_lock"]
+          }
+        },
+        "to": [
+          {
+            "key_code": "left_control",
+            "modifiers": ["left_option", "left_command"]
+          }
+        ]
+      }
+    ]
+  }
+}
