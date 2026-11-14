@@ -1,4 +1,10 @@
-# Riwayat eezaatee-fav-karabiner
+# Riwayat cfg-karabiner
+
+## 2026-11-14T10:40+07:00 — Rename to cfg-karabiner
+
+- **Permintaan:** Vincent meminta nama repo (lokal dan GitHub) mengikuti praktik baik dengan prefix yang menunjukkan ini konfigurasi untuk program lain.
+- **Dikerjakan:** GitHub `adittamavincent/eezaatee-fav-karabiner` diganti nama menjadi `adittamavincent/cfg-karabiner` (GitHub mengalihkan URL lama). Folder lokal dipindah ke `TOOLS/I-Built/cfg-karabiner`, remote `origin` diperbarui. `dist/` dan file assets Karabiner diganti nama menjadi `cfg-karabiner.json`. Aturan penamaan `cfg-<target-program>` dicatat di `AGENTS.md` root, `TOOLS/I-Built/AGENTS.md` dan repo ini. Deskripsi aturan `eezaatee ·` tidak diubah agar toggle di app tetap cocok.
+- **Hasil:** Test, lint dan `build --check` lulus; `sync --dry-run` hanya mengganti aturan sendiri. Branch belum di-push.
 
 ## 2026-11-14T10:25+07:00 — Modular rules, app-preset aware sync, Shift + Caps Lock
 

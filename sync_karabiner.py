@@ -26,7 +26,7 @@ import tempfile
 
 REPO = Path(__file__).resolve().parent
 RULES_DIR = REPO / "rules"
-DIST_FILE = REPO / "dist" / "eezaatee-fav-karabiner.json"
+DIST_FILE = REPO / "dist" / "cfg-karabiner.json"
 ASSET_TITLE = "eezaatee favorite rules"
 DEFAULT_TARGET = Path("~/.config/karabiner/karabiner.json").expanduser()
 DEFAULT_ASSETS_DIR = Path("~/.config/karabiner/assets/complex_modifications").expanduser()

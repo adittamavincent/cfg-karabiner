@@ -1,4 +1,4 @@
-# eezaatee-fav-karabiner
+# cfg-karabiner
 
 Vincent's own Karabiner-Elements rules, kept as separate modules. The sync script
 merges them into the active Karabiner profile and leaves the rules you add in the
@@ -56,7 +56,7 @@ uv run --no-project sync_karabiner.py sync
 - `install-assets` copies the rules into
   `~/.config/karabiner/assets/complex_modifications/`. They then show in the app under
   **Add predefined rule → eezaatee favorite rules**, next to the built-in presets.
-- `build` regenerates `dist/eezaatee-fav-karabiner.json` from `rules/`. `build --check`
+- `build` regenerates `dist/cfg-karabiner.json` from `rules/`. `build --check`
   fails when it is stale.
 
 ## Adding a rule
